@@ -2,9 +2,9 @@
 website
 
 ## steps to make site
-- [ ] make github account
-- [ ] make invisible files show
-- [ ] install tools
-- [ ] install nvm
-- [ ] install node
-- [ ] make repo
+- [x] make github account
+- [x] make invisible files show
+- [x] install tools
+- [x] install nvm
+- [x] install node
+- [x] make repo
