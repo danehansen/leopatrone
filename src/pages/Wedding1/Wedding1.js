@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './Wedding1.module.css';
+import styles from './Wedding1.module.scss';
+import classnames from 'classnames';
 
 const IMAGES = [
   'Jenzack0017.jpg',
@@ -33,12 +34,46 @@ const IMAGES = [
   'Jenzack0809.jpg',
 ];
 
-export default function Wedding1() {
-  return (
-       <div>
-         {IMAGES.map(function(image) {
-           return <img className={styles.img} src={require(`./gallery30/${image}`)} />
-         })}
-       </div>
-   );
+const TYPES = {
+  VERTICAL_SCROLL: 'verticalScroll',
+  // VERTICAL_SCROLL_STICKY: 'verticalScrollSticky',
+  HORIZONTAL_SCROLL: 'horizontalScroll',
+  // HORIZONTAL_SCROLL_STICKY: 'horizontalScrollSticky',
+}
+
+export default class Wedding1 extends React.Component {
+  state = {
+    type: TYPES.VERTICAL_SCROLL,
+  }
+
+  render() {
+    const {type} = this.state;
+
+    const labelNodes = []
+
+    for (let key in TYPES) {
+      const typeName = TYPES[key];
+      labelNodes.push(<label className={styles.label} key={typeName}>
+        <input type="radio" value={typeName} checked={type===typeName} onChange={this._onChange}/>
+        {typeName}
+      </label>)
+    }
+
+    return (
+      <div>
+        <div className={classnames(styles.holder, styles[type])}>
+          {IMAGES.map(function(image) {
+            return <img key={image} className={styles.img} src={require(`./gallery30/${image}`)} />
+          })}
+        </div>
+        <nav className={styles.nav}>
+        {labelNodes}
+        </nav>
+      </div>
+    );
+  }
+
+  _onChange = ({target: {value}}) => {
+    this.setState({type: value});
+  }
 }
