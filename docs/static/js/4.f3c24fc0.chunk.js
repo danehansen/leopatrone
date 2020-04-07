@@ -1,0 +1,2 @@
+(this.webpackJsonpleopatrone=this.webpackJsonpleopatrone||[]).push([[4],{31:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return l}));var r=t(0),a=t.n(r);function l(){return a.a.createElement("div",null,a.a.createElement("h1",null,"wedding gallery 1"))}}}]);
+//# sourceMappingURL=4.f3c24fc0.chunk.js.map
