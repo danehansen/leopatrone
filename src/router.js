@@ -9,11 +9,8 @@ import React, { Suspense, lazy } from 'react';
 const Home = lazy(() => {
   return import('./pages/Home/Home');
 });
-const Wedding1 = lazy(() => {
-  return import('./pages/Wedding1/Wedding1');
-});
-const Wedding2 = lazy(() => {
-  return import('./pages/Wedding2/Wedding2');
+const Gallery = lazy(() => {
+  return import('./pages/Gallery/Gallery');
 });
 
 export default function Router() {
@@ -23,8 +20,7 @@ export default function Router() {
         <Suspense fallback={<div />}>
           <Switch>
             <Route component={Home} exact path="/" />
-            <Route component={Wedding1} exact path="/wedding1" />
-            <Route component={Wedding2} exact path="/wedding2" />
+            <Route component={Gallery} exact path="/gallery" />
           </Switch>
         </Suspense>
       </App>

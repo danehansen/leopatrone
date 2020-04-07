@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Wedding1.module.scss';
+import styles from './Gallery.module.scss';
 import classnames from 'classnames';
 
 const IMAGES = [
@@ -36,8 +36,8 @@ const IMAGES = [
 
 const TYPES = {
   VERTICAL_SCROLL: 'verticalScroll',
-  VERTICAL_SCROLL_STICKY: 'verticalScrollSticky',
   HORIZONTAL_SCROLL: 'horizontalScroll',
+  VERTICAL_SCROLL_STICKY: 'verticalScrollSticky',
   HORIZONTAL_SCROLL_STICKY: 'horizontalScrollSticky',
 }
 
@@ -63,11 +63,11 @@ export default class Wedding1 extends React.Component {
       <div>
         <div className={classnames(styles.gallery, styles[type])}>
           {IMAGES.map(function(image) {
-            return <img key={image} className={styles.img} src={require(`./gallery30/${image}`)} />
+            return <img alt="" key={image} className={styles.img} src={require(`./gallery30/${image}`)} />
           })}
         </div>
         <nav className={styles.nav}>
-        {labelNodes}
+          {labelNodes}
         </nav>
       </div>
     );
