@@ -1,0 +1,11 @@
+.App {
+}
+
+.nav {
+  position: absolute;
+}
+
+.link {
+  position: inline-block;
+  margin: 2px 5px;
+}
