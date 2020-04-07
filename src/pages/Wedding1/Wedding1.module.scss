@@ -7,7 +7,9 @@
   display: block;
 }
 
-.holder {
+.gallery {
+
+
   &.verticalScroll {
     > .img {
       display: block;
@@ -16,23 +18,47 @@
   }
 
   &.verticalScrollSticky {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+
     > .img {
       display: block;
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
+      object-fit:contain;
+      scroll-snap-align: start;
     }
   }
 
   &.horizontalScroll {
-    position: absolute;
     -webkit-overflow-scrolling: touch;
-    height: 100%;
-    width: 100%;
     white-space: nowrap;
 
     > .img {
-      height: 100%;
+      height: 100vh;
     }
   }
 
+  &.horizontalScrollSticky {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+
+    scroll-snap-type: x mandatory;
+    overflow: scroll;
+
+    > .img {
+      display: inline-block;
+      width: 100vw;
+      height: 100vh;
+      object-fit:contain;
+      scroll-snap-align: start;
+    }
+  }
 }

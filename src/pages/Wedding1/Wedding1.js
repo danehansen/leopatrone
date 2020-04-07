@@ -36,9 +36,9 @@ const IMAGES = [
 
 const TYPES = {
   VERTICAL_SCROLL: 'verticalScroll',
-  // VERTICAL_SCROLL_STICKY: 'verticalScrollSticky',
+  VERTICAL_SCROLL_STICKY: 'verticalScrollSticky',
   HORIZONTAL_SCROLL: 'horizontalScroll',
-  // HORIZONTAL_SCROLL_STICKY: 'horizontalScrollSticky',
+  HORIZONTAL_SCROLL_STICKY: 'horizontalScrollSticky',
 }
 
 export default class Wedding1 extends React.Component {
@@ -61,7 +61,7 @@ export default class Wedding1 extends React.Component {
 
     return (
       <div>
-        <div className={classnames(styles.holder, styles[type])}>
+        <div className={classnames(styles.gallery, styles[type])}>
           {IMAGES.map(function(image) {
             return <img key={image} className={styles.img} src={require(`./gallery30/${image}`)} />
           })}
