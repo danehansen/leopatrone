@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/leopatrone/static/css/main.18829b11.chunk.css",
-    "main.js": "/leopatrone/static/js/main.964983c7.chunk.js",
-    "main.js.map": "/leopatrone/static/js/main.964983c7.chunk.js.map",
+    "main.js": "/leopatrone/static/js/main.4e8d4d3a.chunk.js",
+    "main.js.map": "/leopatrone/static/js/main.4e8d4d3a.chunk.js.map",
     "runtime-main.js": "/leopatrone/static/js/runtime-main.6d3e0768.js",
     "runtime-main.js.map": "/leopatrone/static/js/runtime-main.6d3e0768.js.map",
     "static/css/2.a71bcf29.chunk.css": "/leopatrone/static/css/2.a71bcf29.chunk.css",
@@ -13,7 +13,7 @@
     "static/js/4.72e94203.chunk.js": "/leopatrone/static/js/4.72e94203.chunk.js",
     "static/js/4.72e94203.chunk.js.map": "/leopatrone/static/js/4.72e94203.chunk.js.map",
     "index.html": "/leopatrone/index.html",
-    "precache-manifest.58ae53976ef5c629c60802b727463a5d.js": "/leopatrone/precache-manifest.58ae53976ef5c629c60802b727463a5d.js",
+    "precache-manifest.be6a17713eae94cd31bdcec5f293ee3a.js": "/leopatrone/precache-manifest.be6a17713eae94cd31bdcec5f293ee3a.js",
     "service-worker.js": "/leopatrone/service-worker.js",
     "static/css/2.a71bcf29.chunk.css.map": "/leopatrone/static/css/2.a71bcf29.chunk.css.map",
     "static/css/main.18829b11.chunk.css.map": "/leopatrone/static/css/main.18829b11.chunk.css.map",
@@ -54,6 +54,6 @@
     "static/js/runtime-main.6d3e0768.js",
     "static/js/3.8ba52c56.chunk.js",
     "static/css/main.18829b11.chunk.css",
-    "static/js/main.964983c7.chunk.js"
+    "static/js/main.4e8d4d3a.chunk.js"
   ]
 }
